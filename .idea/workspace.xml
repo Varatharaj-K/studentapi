@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b4fe72b-794c-4a18-b916-1cc0aa94b000" name="Default Changelist" comment="" />
+    <list default="true" id="5b4fe72b-794c-4a18-b916-1cc0aa94b000" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/StudentAppApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/StudentAppApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/repo/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/repo/StudentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentService.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +43,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -37,8 +58,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1Rb39lOpwp6PQEu089V0NvaL6g3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="h2" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -56,6 +79,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.studentapi.springstarter.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,11 +139,23 @@
       <workItem from="1569921836181" duration="10551000" />
       <workItem from="1569991892259" duration="8373000" />
       <workItem from="1570001175905" duration="3069000" />
-      <workItem from="1570019020591" duration="1294000" />
+      <workItem from="1570019020591" duration="1891000" />
+      <workItem from="1570076152528" duration="19054000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

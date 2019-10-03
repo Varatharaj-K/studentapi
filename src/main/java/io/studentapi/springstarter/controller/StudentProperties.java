@@ -1,19 +1,27 @@
 package io.studentapi.springstarter.controller;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class StudentProperties {
-    private String id;
+    @Id
+    @GeneratedValue
+    private int id;
     private String name;
-    private String marks;
+    private int marks;
 
     public StudentProperties() {
     }
 
-    public StudentProperties(String id,String name,String marks) {
+    public StudentProperties(int id,String name,int marks) {
         super();
         this.id = id;
         this.name = name;
         this.marks = marks;
     }
-    public String getId() {
+    public Integer getId() {
         return this.id;
     }
 
@@ -31,7 +39,7 @@ public class StudentProperties {
 
     }
 
-    public String getMarks() {
+    public Integer getMarks() {
         return this.marks;
     }
 
