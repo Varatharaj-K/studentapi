@@ -6,19 +6,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @Service
 
 public class StudentService {
+    //    Autowire bean on the setter method
     @Autowired
+//  Creates Repo object to to database operations
     StudentRepo studentRepo;
 
+//   Returns all student details
     public ResponseEntity findAllStudents(String requestHeader) {
+//        header object to set headers
         HttpHeaders responseHeaders = new HttpHeaders();
+//        Checks the request header. If the request is comes from jon it will returns the data or else it will return 400 error message
         if(requestHeader.equals("John") ) {
             responseHeaders.set("Processed-By", "Varatharaj");
+//            findAll()  method helps to fetch all the data from the database
             List std = (List) studentRepo.findAll();
             return ResponseEntity.ok()
                     .headers(responseHeaders)
@@ -28,6 +33,7 @@ public class StudentService {
         }
     }
 
+//    Returns single student detail
     public ResponseEntity getStudent( int id,String requestHeader) {
         HttpHeaders responseHeaders = new HttpHeaders();
         if(requestHeader.equals("John") ) {
@@ -41,8 +47,10 @@ public class StudentService {
         }
     }
 
+//    Adds the new student entry
     public ResponseEntity addStudent( StudentProperties std,String requestHeader) {
         if(requestHeader.equals("John") ) {
+//            save() method helps to save data directly to the database
             studentRepo.save(std);
             JSONObject res = new JSONObject();
             res.put("status", "true");
@@ -56,8 +64,10 @@ public class StudentService {
         }
     }
 
+//    Updates the previous student if it was exist or else it will creates the new student record
     public ResponseEntity updateStudent( StudentProperties std,  int id,String requestHeader) {
         if(requestHeader.equals("John") ) {
+//            Here we can delete the record first and insert as a new one
             studentRepo.delete(id);
             studentRepo.save(std);
             JSONObject res = new JSONObject();
@@ -72,8 +82,10 @@ public class StudentService {
         }
     }
 
+//  Deletes the record if already exist
     public ResponseEntity deleteStudent(int id,String requestHeader) {
         if(requestHeader.equals("John") ) {
+//            delete() method helps to delete fields directly from the database
             studentRepo.delete(id);
             JSONObject res = new JSONObject();
             res.put("status", "true");
@@ -87,6 +99,7 @@ public class StudentService {
         }
     }
 
+//    It returns 400 message
     public ResponseEntity badRequest() {
         JSONObject res = new JSONObject();
         res.put("status","false");

@@ -25,6 +25,7 @@
         <version>1.4.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+<!--    List of of dependencies which we need to use inside the APP-->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
