@@ -2,15 +2,20 @@ package io.studentapi.springstarter.controller;
 
 import io.studentapi.springstarter.repo.StudentRepo;
 import net.minidev.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
 
 public class StudentService {
+    private static final Logger logger = LoggerFactory.getLogger(StudentService.class);
+
     //    Autowire bean on the setter method
     @Autowired
 //  Creates Repo object to to database operations
@@ -64,7 +69,7 @@ public class StudentService {
         }
     }
 
-//    Updates the previous student if it was exist or else it will creates the new student record
+    //    Updates the previous student if it was exist or else it will creates the new student record
     public ResponseEntity updateStudent( StudentProperties std,  int id,String requestHeader) {
         if(requestHeader.equals("John") ) {
 //            Here we can delete the record first and insert as a new one

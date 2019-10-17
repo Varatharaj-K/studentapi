@@ -1,8 +1,7 @@
 package io.studentapi.springstarter.controller;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 
 //   Tells the database to create a table automatically
 //    Here table name is STUDENT_PROPERTIES and fields are id,name and marks
@@ -15,40 +14,31 @@ public class StudentProperties {
     private String name;
     private int marks;
 
-    public StudentProperties() {
-    }
-// constructor
-    public StudentProperties(int id,String name,int marks) {
-        super();
-        this.id = id;
-        this.name = name;
-        this.marks = marks;
-    }
+
 //    Getters and Setters
-    public Integer getId() {
-        return this.id;
+
+    public int getId() {
+        return id;
     }
 
-    public void setId() {
+    public void setId(int id) {
         this.id = id;
-
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
-
     }
 
-    public Integer getMarks() {
-        return this.marks;
+    public int getMarks() {
+        return marks;
     }
 
-    public void setMarks() {
+    public void setMarks(int marks) {
         this.marks = marks;
-
     }
+
 }

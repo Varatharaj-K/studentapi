@@ -1,0 +1,7 @@
+io/studentapi/springstarter/StudentAppApi.class
+io/studentapi/springstarter/controller/StudentService.class
+io/studentapi/springstarter/model/dbmodel/Result.class
+io/studentapi/springstarter/controller/Controller.class
+io/studentapi/springstarter/repo/StudentRepo.class
+io/studentapi/springstarter/controller/StudentProperties.class
+io/studentapi/springstarter/model/dbmodel/Summary.class
