@@ -1,5 +1,7 @@
-package io.studentapi.springstarter.controller;
+package io.studentapi.springstarter.service;
 
+import io.studentapi.springstarter.model.dbmodel.NewMarks;
+import io.studentapi.springstarter.model.dbmodel.Student;
 import io.studentapi.springstarter.repo.StudentRepo;
 import net.minidev.json.JSONObject;
 import org.slf4j.Logger;
@@ -9,6 +11,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -42,7 +45,7 @@ public class StudentService {
     public ResponseEntity getStudent( int id,String requestHeader) {
         HttpHeaders responseHeaders = new HttpHeaders();
         if(requestHeader.equals("John") ) {
-            StudentProperties std = studentRepo.findOne(id);
+            Student std = studentRepo.findOne(id);
             responseHeaders.set("Processed-By", "Varatharaj");
             return ResponseEntity.ok()
                     .headers(responseHeaders)
@@ -53,10 +56,18 @@ public class StudentService {
     }
 
 //    Adds the new student entry
-    public ResponseEntity addStudent( StudentProperties std,String requestHeader) {
+    public ResponseEntity addStudent(Student std, String requestHeader) {
         if(requestHeader.equals("John") ) {
 //            save() method helps to save data directly to the database
-            studentRepo.save(std);
+            Student student = new Student();
+            student.setName(std.getName());
+            student.setMarks(std.getMarks());
+            List<NewMarks> newMarksList = new ArrayList<>();
+            std.getNewMarks().stream().forEach(
+                    newMarks -> newMarksList.add(newMarks)
+            );
+            student.setNewMarks(newMarksList);
+            studentRepo.save(student);
             JSONObject res = new JSONObject();
             res.put("status", "true");
             HttpHeaders responseHeaders = new HttpHeaders();
@@ -70,7 +81,7 @@ public class StudentService {
     }
 
     //    Updates the previous student if it was exist or else it will creates the new student record
-    public ResponseEntity updateStudent( StudentProperties std,  int id,String requestHeader) {
+    public ResponseEntity updateStudent(Student std, int id, String requestHeader) {
         if(requestHeader.equals("John") ) {
 //            Here we can delete the record first and insert as a new one
             studentRepo.delete(id);

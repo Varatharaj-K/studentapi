@@ -1,4 +1,6 @@
 package io.studentapi.springstarter.controller;
+import io.studentapi.springstarter.model.dbmodel.Student;
+import io.studentapi.springstarter.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,13 +28,13 @@ public class Controller {
 
 //    Receives POST method and request body
     @RequestMapping(method = RequestMethod.POST, value = "/student")
-    public ResponseEntity addStudent(@RequestBody StudentProperties std,@RequestHeader("Requested-By") String requestHeader) {
+    public ResponseEntity addStudent(@RequestBody Student std, @RequestHeader("Requested-By") String requestHeader) {
         return studentService.addStudent(std,requestHeader);
     }
 
 //    Receives PUT method. Here it will receive both request body and path variable
     @RequestMapping(method = RequestMethod.PUT, value = "/student/{id}")
-    public ResponseEntity updateStudent(@RequestBody StudentProperties std, @PathVariable int id,@RequestHeader("Requested-By") String requestHeader) {
+    public ResponseEntity updateStudent(@RequestBody Student std, @PathVariable int id, @RequestHeader("Requested-By") String requestHeader) {
 
         return studentService.updateStudent(std,id,requestHeader);
     }

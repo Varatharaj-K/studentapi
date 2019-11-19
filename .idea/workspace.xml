@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b4fe72b-794c-4a18-b916-1cc0aa94b000" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/httprequest.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/model/dbmodel/NewMarks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/studentapi.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/StudentAppApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/StudentAppApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/studentapi/springstarter/controller/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/model/dbmodel/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/controller/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/repo/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/studentapi/springstarter/repo/StudentRepo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
